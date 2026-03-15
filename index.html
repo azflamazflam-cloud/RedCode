@@ -7,82 +7,172 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="bg-ambient"></div>
     <div class="bg-grid"></div>
+    <div class="bg-orbit orbit-1"></div>
+    <div class="bg-orbit orbit-2"></div>
+
     <header class="nav">
       <div class="brand">
         <img src="tes.png" alt="RedCode Logo" />
-        <span>RedCode</span>
+        <div class="brand-text">
+          <span class="brand-name">RedCode</span>
+          <span class="brand-tag">Windows Code Studio</span>
+        </div>
       </div>
-      <nav>
+      <nav class="nav-links">
         <a href="#about">Tentang</a>
         <a href="#features">Fitur</a>
-        <a href="#download">Download</a>
+        <a href="#install">Cara Install</a>
       </nav>
+      <a class="nav-cta" href="https://github.com/azflamazflam-cloud/RedCode/releases/download/azfla/RedCode-Setup.msi">Install</a>
     </header>
 
     <main>
       <section class="hero" id="download">
-        <div class="hero-card">
-          <div class="hero-badge">Editor Desktop Windows</div>
-          <div class="logo-ring">
-            <img src="tes.png" alt="RedCode" />
-          </div>
-          <h1>RedCode</h1>
+        <div class="hero-text">
+          <div class="chip">Editor Desktop Windows</div>
+          <h1>RedCode, editor elegan untuk fokus dan cepat.</h1>
           <p>
-            RedCode adalah editor kode ringan bergaya VS Code dengan auto-indent,
-            explorer folder, terminal, dan auto-save opsional - cocok untuk belajar
-            dan produksi harian.
+            Desain premium dengan fitur penting ala VS Code: auto-indent setelah
+            tanda <strong>:</strong>, explorer folder, terminal bawaan, dan auto-save opsional.
           </p>
-          <a class="cta" href="https://github.com/azflamazflam-cloud/RedCode/releases/download/azfla/RedCode-Setup.msi">Install RedCode</a>
-          <div class="meta">
-            Windows 10/11 - Installer MSI - Klik tombol untuk download
+          <div class="hero-actions">
+            <a class="cta primary" href="https://github.com/azflamazflam-cloud/RedCode/releases/download/azfla/RedCode-Setup.msi">Install RedCode</a>
+            <a class="cta ghost" href="#features">Lihat Fitur</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-value">MSI</span>
+              <span class="stat-label">Installer resmi</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">Win 10/11</span>
+              <span class="stat-label">64-bit</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">Pro</span>
+              <span class="stat-label">Tampilan premium</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="panel-card">
+            <div class="panel-top">
+              <div class="panel-logo">
+                <img src="tes.png" alt="RedCode" />
+              </div>
+              <div>
+                <h2>RedCode Studio</h2>
+                <p>Minimal, cepat, dan tajam untuk workflow harian.</p>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="panel-row">Auto-indent setelah <strong>:</strong></div>
+              <div class="panel-row">Explorer folder bertingkat</div>
+              <div class="panel-row">Terminal PowerShell di bawah</div>
+              <div class="panel-row">Auto-save bisa diaktifkan</div>
+            </div>
+            <a class="panel-install" href="https://github.com/azflamazflam-cloud/RedCode/releases/download/azfla/RedCode-Setup.msi">Install MSI</a>
+            <div class="panel-note">Shortcut otomatis muncul di Desktop</div>
           </div>
         </div>
       </section>
 
-      <section class="content" id="about">
-        <h2>Untuk Apa RedCode?</h2>
-        <p>
-          RedCode dibuat untuk memberi pengalaman coding yang bersih, fokus,
-          dan cepat. Cocok untuk pemula maupun developer yang butuh editor
-          sederhana tapi tetap kuat.
-        </p>
+      <section class="section" id="about">
+        <div class="section-header">
+          <h2>Kenapa RedCode?</h2>
+          <p>Karena kamu butuh editor yang terlihat mewah, tapi tetap ringan dan fokus.</p>
+        </div>
+        <div class="highlight-grid">
+          <div class="highlight">
+            <h3>Desain Mewah</h3>
+            <p>UI gelap dengan aksen merah elegan dan layout premium.</p>
+          </div>
+          <div class="highlight">
+            <h3>Fokus Mengetik</h3>
+            <p>Auto-indent dan editor yang bersih bikin kamu lebih cepat.</p>
+          </div>
+          <div class="highlight">
+            <h3>Workflow Nyaman</h3>
+            <p>Explorer rapi, terminal bawaan, dan auto-save opsional.</p>
+          </div>
+        </div>
       </section>
 
-      <section class="content" id="features">
-        <h2>Fitur Utama</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>Explorer Folder</h3>
-            <p>Buka folder, klik folder untuk lihat file di dalamnya.</p>
+      <section class="section" id="features">
+        <div class="section-header">
+          <h2>Fitur Utama</h2>
+          <p>Semua yang kamu butuhkan untuk produktif, tanpa ribet.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-title">Explorer Folder</div>
+            <p>Buka folder dan klik untuk menampilkan file di dalamnya.</p>
           </div>
-          <div class="card">
-            <h3>Auto-Indent</h3>
+          <div class="feature-card">
+            <div class="feature-title">Auto-Indent</div>
             <p>Menambahkan indent otomatis setelah tanda <strong>:</strong>.</p>
           </div>
-          <div class="card">
-            <h3>Terminal</h3>
-            <p>Terminal bawah (PowerShell) untuk perintah cepat.</p>
+          <div class="feature-card">
+            <div class="feature-title">Terminal Built-in</div>
+            <p>Terminal PowerShell di bawah, seperti VS Code.</p>
           </div>
-          <div class="card">
-            <h3>Auto-Save</h3>
-            <p>Opsional auto-save, atau simpan manual dengan Ctrl+S.</p>
+          <div class="feature-card">
+            <div class="feature-title">Auto-Save</div>
+            <p>Aktifkan auto-save atau simpan manual dengan Ctrl+S.</p>
           </div>
         </div>
       </section>
 
-      <section class="content" id="install">
-        <h2>Cara Install</h2>
-        <ol>
-          <li>Klik tombol <strong>Install RedCode</strong> di atas.</li>
-          <li>Jalankan file <strong>RedCode-Setup.msi</strong>.</li>
-          <li>Shortcut akan muncul di Desktop.</li>
-        </ol>
-        <p class="note">
-          Jika kamu host di Vercel atau GitHub Pages, ganti link tombol Install
-          ke URL GitHub Releases untuk file <code>RedCode-Setup.msi</code>.
+      <section class="section" id="install">
+        <div class="section-header">
+          <h2>Cara Install</h2>
+          <p>Proses cepat, satu klik, langsung siap dipakai.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">01</div>
+            <div>
+              <h3>Download MSI</h3>
+              <p>Klik tombol Install RedCode di atas.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">02</div>
+            <div>
+              <h3>Jalankan Installer</h3>
+              <p>Buka file <strong>RedCode-Setup.msi</strong> dan ikuti wizard.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">03</div>
+            <div>
+              <h3>Mulai Coding</h3>
+              <p>Shortcut muncul di Desktop untuk semua user.</p>
+            </div>
+          </div>
+        </div>
+        <p class="install-note">
+          Jika shortcut tidak muncul di Desktop, buka <code>C:\Program Files\RedCode</code>
+          lalu jalankan <strong>RedCode.exe</strong>.
         </p>
       </section>
+
+      <section class="section cta-section">
+        <div class="cta-card">
+          <div>
+            <h2>Siap pakai RedCode?</h2>
+            <p>Download sekarang dan rasakan editor premium yang tetap ringan.</p>
+          </div>
+          <a class="cta primary" href="https://github.com/azflamazflam-cloud/RedCode/releases/download/azfla/RedCode-Setup.msi">Install Sekarang</a>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <span>RedCode - Windows 10/11 - Installer MSI per-machine</span>
+    </footer>
   </body>
 </html>
